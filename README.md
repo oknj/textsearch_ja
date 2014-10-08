@@ -8,5 +8,5 @@ textsearch_ja
 ## 参照
 
 * 公式
-** http://textsearch-ja.projects.pgfoundry.org/textsearch_ja.html
-** 使い方などは、公式サイトを参照してください。
+ - http://textsearch-ja.projects.pgfoundry.org/textsearch_ja.html
+ - 使い方などは、公式サイトを参照してください。
