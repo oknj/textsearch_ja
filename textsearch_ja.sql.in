@@ -9,17 +9,17 @@ BEGIN;
 CREATE FUNCTION ts_ja_start(internal, int4)
     RETURNS internal
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' STRICT;
+    LANGUAGE 'c' STRICT;
 
 CREATE FUNCTION ts_ja_gettoken(internal, internal, internal)
     RETURNS internal
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' STRICT;
+    LANGUAGE 'c' STRICT;
 
 CREATE FUNCTION ts_ja_end(internal)
     RETURNS void
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' STRICT;
+    LANGUAGE 'c' STRICT;
 
 CREATE TEXT SEARCH PARSER pg_catalog.japanese (
     START    = ts_ja_start,
@@ -38,7 +38,7 @@ COMMENT ON TEXT SEARCH PARSER pg_catalog.japanese IS
 CREATE FUNCTION ts_ja_lexize(internal, internal, internal, internal)
     RETURNS internal
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' STRICT;
+    LANGUAGE 'c' STRICT;
 
 CREATE TEXT SEARCH TEMPLATE pg_catalog.mecab (
 	LEXIZE = ts_ja_lexize
@@ -90,17 +90,17 @@ CREATE FUNCTION ja_analyze(
         OUT pronounce text)
     RETURNS SETOF record
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' IMMUTABLE STRICT;
+    LANGUAGE 'c' IMMUTABLE STRICT;
 
 CREATE FUNCTION ja_normalize(text)
     RETURNS text
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' IMMUTABLE STRICT;
+    LANGUAGE 'c' IMMUTABLE STRICT;
 
 CREATE FUNCTION ja_wakachi(text)
     RETURNS text
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' IMMUTABLE STRICT;
+    LANGUAGE 'c' IMMUTABLE STRICT;
 
 CREATE FUNCTION web_query(text) RETURNS text AS
 $$
@@ -114,17 +114,17 @@ LANGUAGE sql IMMUTABLE STRICT;
 CREATE FUNCTION furigana(text)
     RETURNS text
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' IMMUTABLE STRICT;
+    LANGUAGE 'c' IMMUTABLE STRICT;
 
 CREATE FUNCTION hiragana(text)
     RETURNS text
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' IMMUTABLE STRICT;
+    LANGUAGE 'c' IMMUTABLE STRICT;
 
 CREATE FUNCTION katakana(text)
     RETURNS text
     AS 'MODULE_PATHNAME'
-    LANGUAGE 'C' IMMUTABLE STRICT;
+    LANGUAGE 'c' IMMUTABLE STRICT;
 
 --
 
