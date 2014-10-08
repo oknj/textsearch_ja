@@ -1,0 +1,11 @@
+*.o
+*.so
+*.a
+*.pc
+textsearch_ja.sql
+regression.diffs
+regression.out
+pgut/*.o
+results/
+tmp_check/
+log/
