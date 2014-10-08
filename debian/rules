@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+# debian/rules for pg_statsinfo
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# environment values
+export USE_PGXS=1
+
+# build rule
+build:
+	dh $@ --parallel
+
+# package rule
+binary:
+	dh $@ --parallel
+
+# others
+%:
+	dh $@ --parallel
+
+# commands not to run
+override_dh_auto_configure:
+override_dh_auto_test:

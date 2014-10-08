@@ -1,0 +1,15 @@
+Source: postgresql-9.3-textsearch-ja
+Section: database
+Priority: extra
+Maintainer: OTSUKA Kenji <otsuka.knj@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), postgresql-server-dev-9.3, libmecab-dev
+Standards-Version: 3.8.4
+Homepage: https://github.com/oknj/textsearch_ja
+#Vcs-Git: git://git.debian.org/collab-maint/postgresql-9.3-pg-bigm.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/postgresql-9.3-pg-bigm.git;a=summary
+
+Package: postgresql-9.3-textsearch-ja
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-9.3, libmecab2
+Description: Integrated Full-Text-Search for Japanese using morphological analyze.
+ The textsearch_ja module provides full text search capability in PostgreSQL.
