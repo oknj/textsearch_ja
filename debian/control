@@ -10,6 +10,6 @@ Homepage: https://github.com/oknj/textsearch_ja
 
 Package: postgresql-9.3-textsearch-ja
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-9.3, libmecab2
+Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-9.3, libmecab2, mecab-ipadic-utf8
 Description: Integrated Full-Text-Search for Japanese using morphological analyze.
  The textsearch_ja module provides full text search capability in PostgreSQL.

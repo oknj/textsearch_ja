@@ -1,3 +1,9 @@
+postgresql-9.3-textsearch-ja (9.3.0-2) unstable; urgency=low
+
+  * modify dependency.
+
+ -- OTSUKA Kenji <otsuka.knj@gmail.com>  Sun, 12 Oct 2014 00:00:00 +0900
+
 postgresql-9.3-textsearch-ja (9.3.0-1) unstable; urgency=low
 
   * initial release for 9.3.0.
