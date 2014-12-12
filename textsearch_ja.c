@@ -4,7 +4,11 @@
 #include "postgres.h"
 
 #include "access/heapam.h"
+
+#if PG_VERSION_NUM >= 90300
 #include "access/htup_details.h"
+#endif
+
 #include "catalog/pg_type.h"
 #include "funcapi.h"
 #include "mb/pg_wchar.h"
