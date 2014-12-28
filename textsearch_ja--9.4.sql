@@ -1,7 +1,5 @@
 SET search_path = public;
 
-BEGIN;
-
 --
 -- Japanese text parser
 --
@@ -127,5 +125,3 @@ CREATE FUNCTION katakana(text)
     LANGUAGE 'c' IMMUTABLE STRICT;
 
 --
-
-COMMIT;

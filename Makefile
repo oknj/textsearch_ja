@@ -1,6 +1,6 @@
 MODULE_big = textsearch_ja
-DATA_built = textsearch_ja.sql
-DATA = uninstall_textsearch_ja.sql
+EXTENSION = textsearch_ja
+DATA = textsearch_ja--9.4.sql textsearch_ja--unpackaged--9.4.sql
 OBJS = textsearch_ja.o encoding_eucjp.o encoding_utf8.o pgut/pgut-be.o
 REGRESS = init convert textsearch_ja
 SHLIB_LINK = -lmecab

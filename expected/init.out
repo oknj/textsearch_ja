@@ -1,3 +1,32 @@
 SET client_min_messages = warning;
-\set ECHO none
+\set ECHO all
+CREATE EXTENSION textsearch_ja;
+\dx textsearch_ja
+                                      List of installed extensions
+     Name      | Version | Schema |                             Description                              
+---------------+---------+--------+----------------------------------------------------------------------
+ textsearch_ja | 9.4     | public | Integrated Full-Text-Search for Japanese using morphological analyze
+(1 row)
+
+\dx+ textsearch_ja
+            Objects in extension "textsearch_ja"
+                     Object Description                     
+------------------------------------------------------------
+ function furigana(text)
+ function hiragana(text)
+ function ja_analyze(text)
+ function ja_normalize(text)
+ function ja_wakachi(text)
+ function katakana(text)
+ function ts_ja_end(internal)
+ function ts_ja_gettoken(internal,internal,internal)
+ function ts_ja_lexize(internal,internal,internal,internal)
+ function ts_ja_start(internal,integer)
+ function web_query(text)
+ text search configuration japanese
+ text search dictionary japanese_stem
+ text search parser japanese
+ text search template mecab
+(15 rows)
+
 RESET client_min_messages;
