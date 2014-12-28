@@ -1,0 +1,5 @@
+# textsearch_ja extension
+comment = 'Integrated Full-Text-Search for Japanese using morphological analyze'
+default_version = '9.4'
+module_pathname = '$libdir/textsearch_ja'
+relocatable = true
