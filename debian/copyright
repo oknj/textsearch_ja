@@ -6,8 +6,8 @@ Files: *
 Copyright: 2008-2009, NIPPON TELEGRAPH AND TELEPHONE CORPORATION
 License: PostgreSQL
 
-Files: debian/*
-Copyright: 2014 OTSUKA Kenji <otsuka.knj@gmail.com>
+Files: textsearch_ja.control textsearch_ja--* debian/*
+Copyright: 2016 OTSUKA Kenji <otsuka.knj@gmail.com>
 License: PostgreSQL
 
 License: PostgreSQL
