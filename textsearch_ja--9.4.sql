@@ -1,9 +1,12 @@
+-- complain if script is sourced in psql, rather than via CREATE EXTENSION
+\echo Use "CREATE EXTENSION testsearch_ja" to load this file. \quit
+
+
 SET search_path = public;
 
 --
 -- Japanese text parser
 --
-
 CREATE FUNCTION ts_ja_start(internal, int4)
     RETURNS internal
     AS 'MODULE_PATHNAME'
@@ -32,7 +35,6 @@ COMMENT ON TEXT SEARCH PARSER pg_catalog.japanese IS
 --
 -- Japanese text lexizer
 --
-
 CREATE FUNCTION ts_ja_lexize(internal, internal, internal, internal)
     RETURNS internal
     AS 'MODULE_PATHNAME'
@@ -49,7 +51,6 @@ CREATE TEXT SEARCH DICTIONARY pg_catalog.japanese_stem (
 --
 -- Japanese text configuration
 --
-
 CREATE TEXT SEARCH CONFIGURATION pg_catalog.japanese (PARSER = japanese);
 COMMENT ON TEXT SEARCH CONFIGURATION pg_catalog.japanese IS
     'configuration for japanese language';
@@ -73,7 +74,6 @@ ALTER TEXT SEARCH CONFIGURATION pg_catalog.japanese ADD MAPPING
 --
 -- Utility functions
 --
-
 CREATE FUNCTION ja_analyze(
         text,
         OUT word text,
@@ -123,5 +123,3 @@ CREATE FUNCTION katakana(text)
     RETURNS text
     AS 'MODULE_PATHNAME'
     LANGUAGE 'c' IMMUTABLE STRICT;
-
---
