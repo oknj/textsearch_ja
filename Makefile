@@ -1,9 +1,10 @@
 MODULE_big = textsearch_ja
-EXTENSION = textsearch_ja
-DATA = textsearch_ja--9.4.sql textsearch_ja--unpackaged--9.4.sql
 OBJS = textsearch_ja.o encoding_eucjp.o encoding_utf8.o pgut/pgut-be.o
-REGRESS = init convert textsearch_ja
 SHLIB_LINK = -lmecab
+REGRESS = init convert textsearch_ja
+
+EXTENSION = textsearch_ja
+DATA = textsearch_ja--9.5.sql textsearch_ja--9.4--9.5.sql
 
 ifndef USE_PGXS
 top_builddir = ../..
