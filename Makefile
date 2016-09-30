@@ -4,7 +4,7 @@ SHLIB_LINK = -lmecab
 REGRESS = init convert textsearch_ja
 
 EXTENSION = textsearch_ja
-DATA = textsearch_ja--9.5.sql textsearch_ja--9.4--9.5.sql
+DATA = textsearch_ja--9.6.sql textsearch_ja--9.5--9.6.sql textsearch_ja--9.4--9.5.sql
 
 ifndef USE_PGXS
 top_builddir = ../..
