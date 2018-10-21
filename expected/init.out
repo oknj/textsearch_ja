@@ -5,12 +5,12 @@ CREATE EXTENSION textsearch_ja;
                                       List of installed extensions
      Name      | Version | Schema |                             Description                              
 ---------------+---------+--------+----------------------------------------------------------------------
- textsearch_ja | 9.6     | public | Integrated Full-Text-Search for Japanese using morphological analyze
+ textsearch_ja | 42      | public | Integrated Full-Text-Search for Japanese using morphological analyze
 (1 row)
 
 \dx+ textsearch_ja
             Objects in extension "textsearch_ja"
-                     Object Description                     
+                     Object description                     
 ------------------------------------------------------------
  function furigana(text)
  function hiragana(text)
