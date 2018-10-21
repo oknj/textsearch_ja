@@ -1,3 +1,9 @@
+postgresql-11-textsearch-ja (42.0.0-1) unstable; urgency=low
+
+  * Support for PostgreSQL 11.
+
+ -- OTSUKA Kenji <otsuka.knj@gmail.com>  Sun, 21 Oct 2018 00:00:00 +0900
+
 postgresql-9.6-textsearch-ja (9.6.0-1) unstable; urgency=low
 
   * Support for PostgreSQL 9.6.
